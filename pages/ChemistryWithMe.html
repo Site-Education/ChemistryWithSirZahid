@@ -53,6 +53,14 @@
           margin: 1rem 0;
         }
       }
+	  .gallery-item {
+      margin-bottom: 30px;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+    }
+
     </style>
   </head>
 
@@ -122,81 +130,62 @@
       </div>
     </nav>
 
-    <!-- Main Content Section -->
-    <div class="container text-center mt-8">
-      <h2 class="text-4xl text-crimson font-bold">Learn ChemistryWithMe</h2>
+    
+<div class="container mt-5">
+  <div class="row">
+    <!-- Item 1: Image on left, Text on right -->
+    <div class="col-md-6 gallery-item">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../pic/LL.jpg" alt="Chemistry Illustration" class="section-img img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
+          <p><br> Chemistry helps us understand the world around us by explaining how substances interact, change, and form new compounds and much more.....</p>
+        </div>
+      </div>
     </div>
 
-    <!-- Left-to-Right Section -->
-    <section class="section row p-8">
-      <div class="col-12 col-md-6 text-section">
-        <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
-        <p class="text-lg mt-2">
-         <br><br><br> Chemistry helps us understand the world around us by explaining how substances interact, change, and form new compounds and much more....
-        </p>
+    <!-- Item 2: Image on right, Text on left -->
+    <div class="col-md-6 gallery-item">
+      <div class="row">
+        <div class="col-md-6 order-md-2">
+         <img src="../pic/CC.jpg" alt="Food Chemistry" class="section-img img-fluid" />
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
+          <p><br> Chemistry plays a key role in medicine by enabling the development of new drugs, treatments, and vaccines that save lives. And much more...</p>
+        </div>
       </div>
-      <div class="col-12 col-md-6">
-        <img src="../pic/LL.jpg" alt="Chemistry Illustration" class="section-img img-fluid" />
-      </div>
-    </section>
+    </div>
 
-    <!-- Right-to-Left Section -->
-    <section class="section row p-8">
-      <div class="col-12 col-md-6 text-section">
-        <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
-        <p class="text-lg mt-2">
-         <br><br><br> Chemistry plays a key role in medicine by enabling the development of new drugs, treatments, and vaccines that save lives. And much more...
-        </p>
+    <!-- Item 3: Image on left, Text on right -->
+    <div class="col-md-6 gallery-item">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../pic/KK.jpg" alt="Environmental Chemistry" class="section-img img-fluid"/>
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
+          <p><br>It contributes to environmental protection through the development of sustainable practices, renewable energy sources, and pollution control methods. & much more...</p>
+        </div>
       </div>
-      <div class="col-12 col-md-6">
-        <img src="../pic/HH.jpg" alt="Medicine and Chemistry" class="section-img img-fluid" />
+    </div>
+    
+    <!-- Item 4: Image on right, Text on left -->
+    <div class="col-md-6 gallery-item">
+      <div class="row">
+        <div class="col-md-6 order-md-2">
+          <img src="../pic/AA.jpg" alt="Everyday Chemistry" class="section-img img-fluid" />
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
+          <p><br> Chemistry is essential in creating everyday products like cleaning agents, cosmetics, and materials for clothing and electronics & much more....</p>
+        </div>
       </div>
-    </section>
-
-    <!-- Left-to-Right Section -->
-    <section class="section row p-8">
-      <div class="col-12 col-md-6 text-section">
-        <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
-        <p class="text-lg mt-2">
-          <br><br><br>It contributes to environmental protection through the development of sustainable practices, renewable energy sources, and pollution control methods. & much more...
-        </p>
-      </div>
-      <div class="col-12 col-md-6">
-        <img src="../pic/KK.jpg" alt="Environmental Chemistry" class="section-img img-fluid" />
-      </div>
-    </section>
-
-    <!-- Right-to-Left Section -->
-    <section class="section row p-8">
-      <div class="col-12 col-md-6 text-section">
-        <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
-        <p class="text-lg mt-2">
-         <br><br><br> Chemistry improves food production by developing fertilizers, preservatives, and food safety techniques that ensure nutrition and quality & much more...
-        </p>
-      </div>
-      <div class="col-12 col-md-6">
-        <img src="../pic/CC.jpg" alt="Food Chemistry" class="section-img img-fluid" />
-      </div>
-    </section>
-
-    <!-- Left-to-Right Section -->
-    <section class="section row p-8">
-      <div class="col-12 col-md-6 text-section">
-        <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
-        <p class="text-lg mt-2">
-         <br><br><br> Chemistry is essential in creating everyday products like cleaning agents, cosmetics, and materials for clothing and electronics & much more...
-        </p>
-      </div>
-      <div class="col-12 col-md-6">
-        <img src="../pic/AA.jpg" alt="Everyday Chemistry" class="section-img img-fluid" />
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-crimson text-white text-center py-4 mt-8">
-      <p>&copy; 2025 ChemistryWithMe. All rights reserved.</p>
-    </footer>
-
+    </div>
+  </div>
+</div>
     <!-- Bootstrap JS (Required for some components like navbar toggle) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
