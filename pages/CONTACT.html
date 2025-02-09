@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChemistryWithMe</title>
+    <!-- Link to Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Global Styles */
+      body {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #4fd1c5, #818cf8, #60a5fa);
+      }
+
+      /* Custom Navbar Color and Padding */
+      .navbar-custom {
+        background-color: red; /* Red background */
+        padding-left: 30px; /* Left padding */
+        padding-right: 30px; /* Right padding */
+      }
+
+      /* Main Content */
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      .navbar a:hover {
+        background-color: #9b1d38;
+        border-radius: 0.25rem;
+      }
+
+      .contact-section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Aligns content to the top */
+        padding: 1em 1em 0; /* Padding only on the left and right, no padding at the top */
+        min-height: 100vh;
+      }
+
+      .contact-info {
+        text-align: center;
+        font-size: 1.2em;
+        padding: 2em;
+        border-radius: 10px;
+        background-color: #fff; /* White background for contact box */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        width: 100%;
+        max-width: 600px; /* Max width for better responsive layout */
+      }
+
+      .contact-info h3 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        color: #333;
+      }
+
+      .contact-info p {
+        margin-bottom: 1.5em;
+        font-size: 1.1em;
+        color: #555;
+      }
+
+      .contact-info i {
+        margin-right: 10px;
+        color: #007bff; /* Icon color */
+      }
+
+      /* Footer */
+      footer {
+        background-color: #1d4ed8;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gradient-to-br from-teal-300 via-indigo-200 to-blue-300">
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom p-4">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="./ChemistryWithMe.html"
+          >ChemistryWithMe</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white active"
+                aria-current="page"
+                href="HOME.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./ONLINE-TEST.html"
+                >ONLINE TEST</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./TEST-PDF.html">TEST PDF</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./CONTACT.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./ABOUT.html">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Introduction Section -->
+    <div class="container mt-5">
+      <h2 class="text-center text-danger fs-2">Contact Me</h2>
+      <p class="text-center fs-5 text-dark">
+        I am here to support you in your learning. If you have any questions,
+        need help understanding a concept, or want to discuss something in more
+        detail, don't hesitate to reach out to me.
+      </p>
+      <p class="text-center fs-4 text-dark">
+        Feel free to ask in class, or reach out during office hours. Your
+        understanding and success are my top priorities!
+      </p>
+      <p class="text-center text-danger fs-4">
+        Teachers are always willing to help and it’s important to communicate
+        with them whenever you need assistance.
+      </p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>
+          <i class="fas fa-user"></i> <strong>PROF:</strong> ZAHID HUSSAIN SIYAL
+        </p>
+        <p>
+          <i class="fas fa-phone"></i>
+          <strong>Contact Number:</strong> 03063050188
+        </p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> <strong>VISIT:</strong> CENTRE,
+          MORO
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4">
+      <p>&copy; 2025 ChemistryWithMe All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js (Required for the Navbar to Work) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

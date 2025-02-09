@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChemistryWithMe</title>
+    <!-- Link to Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Global Styles */
+      body {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #4fd1c5, #818cf8, #60a5fa);
+      }
+
+      /* Custom Navbar Color and Padding */
+      .navbar-custom {
+        background-color: red; /* Red background */
+        padding-left: 2rem; /* Left padding using rem for better scalability */
+        padding-right: 2rem; /* Right padding using rem */
+      }
+
+      .navbar a:hover {
+        background-color: #9b1d38;
+        border-radius: 0.25rem;
+      }
+
+      .text-section {
+        text-align: center;
+      }
+
+      .section-img {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 80%;
+      }
+
+      /* Mobile adjustments */
+      @media (max-width: 768px) {
+        .section {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .section-img {
+          margin: 1rem 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-gradient-to-br from-teal-300 via-indigo-200 to-blue-300">
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom p-4">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="./ChemistryWithMe.html"
+          >ChemistryWithMe</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white active"
+                aria-current="page"
+                href="../index.html"
+                aria-label="Go to Home Page"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="./onlineTest.html"
+                aria-label="Online Test"
+                >ONLINE TEST</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="./TEST-PDF.html"
+                aria-label="Download Test PDFs"
+                >TEST PDF</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="./CONTACT.html"
+                aria-label="Contact Us"
+                >CONTACT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="./ABOUT.html"
+                aria-label="About Us"
+                >ABOUT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container text-center mt-8">
+      <h2 class="text-4xl text-crimson font-bold">Learn ChemistryWithMe</h2>
+    </div>
+
+    <!-- Left-to-Right Section -->
+    <section class="section row p-8">
+      <div class="col-12 col-md-6 text-section">
+        <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
+        <p class="text-lg mt-2">
+         <br><br><br> Chemistry helps us understand the world around us by explaining how substances interact, change, and form new compounds and much more....
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="../pic/LL.jpg" alt="Chemistry Illustration" class="section-img img-fluid" />
+      </div>
+    </section>
+
+    <!-- Right-to-Left Section -->
+    <section class="section row p-8">
+      <div class="col-12 col-md-6 text-section">
+        <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
+        <p class="text-lg mt-2">
+         <br><br><br> Chemistry plays a key role in medicine by enabling the development of new drugs, treatments, and vaccines that save lives. And much more...
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="../pic/HH.jpg" alt="Medicine and Chemistry" class="section-img img-fluid" />
+      </div>
+    </section>
+
+    <!-- Left-to-Right Section -->
+    <section class="section row p-8">
+      <div class="col-12 col-md-6 text-section">
+        <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
+        <p class="text-lg mt-2">
+          <br><br><br>It contributes to environmental protection through the development of sustainable practices, renewable energy sources, and pollution control methods. & much more...
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="../pic/KK.jpg" alt="Environmental Chemistry" class="section-img img-fluid" />
+      </div>
+    </section>
+
+    <!-- Right-to-Left Section -->
+    <section class="section row p-8">
+      <div class="col-12 col-md-6 text-section">
+        <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
+        <p class="text-lg mt-2">
+         <br><br><br> Chemistry improves food production by developing fertilizers, preservatives, and food safety techniques that ensure nutrition and quality & much more...
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="../pic/CC.jpg" alt="Food Chemistry" class="section-img img-fluid" />
+      </div>
+    </section>
+
+    <!-- Left-to-Right Section -->
+    <section class="section row p-8">
+      <div class="col-12 col-md-6 text-section">
+        <h3 class="text-red-500 text-2xl font-bold">ChemistryWithMe</h3>
+        <p class="text-lg mt-2">
+         <br><br><br> Chemistry is essential in creating everyday products like cleaning agents, cosmetics, and materials for clothing and electronics & much more...
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="../pic/AA.jpg" alt="Everyday Chemistry" class="section-img img-fluid" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-crimson text-white text-center py-4 mt-8">
+      <p>&copy; 2025 ChemistryWithMe. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS (Required for some components like navbar toggle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

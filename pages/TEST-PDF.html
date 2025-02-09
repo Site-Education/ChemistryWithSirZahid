@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with Bootstrap</title>
+    <!-- Link to Bootstrap CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Global Styles */
+      body {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #4fd1c5, #818cf8, #60a5fa);
+      }
+
+      /* Custom Navbar Color and Padding */
+      .navbar-custom {
+        background-color: red; /* Red background */
+        padding-left: 30px; /* Left padding */
+        padding-right: 30px; /* Right padding */
+      }
+
+        /* Apply responsive units for padding and font size */
+        .btn-group button {
+            font-size: 1rem;  /* Adjust font size relative to root (16px by default) */
+            padding: 1rem 2vw;  /* Padding relative to the viewport width (2% of screen width) */
+        }
+
+        /* Set widths and margins relative to screen size */
+        .container {
+            width: 90%; /* Container width as 90% of the parent */
+        }
+
+        /* Ensure dropdowns take full width on small screens */
+        @media (max-width: 768px) {
+            .btn-group {
+                width: 100%; /* Full width for small screens */
+            }
+        }
+
+        /* Larger screens will show the buttons in a row */
+        @media (min-width: 769px) {
+            .btn-group {
+                width: auto; /* Default behavior */
+            }
+        }
+
+        /* Responsive Font Sizes for Buttons */
+        .btn-group button {
+            font-size: 1.5vw; /* Font size 1.5% of viewport width */
+        }
+
+     
+    </style>
+  </head>
+
+  <body class="bg-gradient-to-br from-teal-300 via-indigo-200 to-blue-300">
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom p-4">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="./ChemistryWithMe.html"
+          >ChemistryWithMe</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white active"
+                aria-current="page"
+                href="../index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/onlineTest.html"
+                >ONLINE TEST</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/TEST-PDF.html"
+                >TEST PDF</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/CONTACT.html"
+                >CONTACT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/ABOUT.html"
+                >ABOUT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+    <div class="container mt-5">
+        <!-- Buttons with Dropdowns in a Row -->
+        <div class="row">
+            <div class="col-12 col-md-4 mb-3">
+                <div class="btn-group w-100">
+                    
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually">9.CHEMISTRY</span>
+                    </button>
+					 <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://drive.google.com/file/d/1jNcT-0jCYIGWI3Jqt6-WQScdR4x4lI6y/view" target="_self">Ch#1</a></li>
+             <li><a class="dropdown-item" href="https://drive.google.com/file/d/1v6BZqR_gQO_7GQ6rIlA2nsPyn14wBbZC/view?usp=sharing" target="_self" >Ch#2</a></li>
+             <li><a class="dropdown-item" href="https://drive.google.com/file/d/1bjeofokynFysCflGjTIxykxQqepLrR6c/view?usp=sharing" target="_self">Ch#3</a></li>
+             <li><a class="dropdown-item" href="https://drive.google.com/file/d/14wkEG8cZbeAIG4lE516LCx3t1ampNCBx/view?usp=sharing" target="_self">Ch#4</a></li>
+             <li><a class="dropdown-item" href="https://drive.google.com/file/d/1jOJg0psRAJWq8iU5T6hQnPbugCgJgezs/view?usp=sharing" target="_self">Ch#5 & 6</a></li>
+             <li><a class="dropdown-item" href="https://drive.google.com/file/d/12TXQsjv1-6JpO4QvMsH943ATX1R1B-Zx/view?usp=sharing" target="_self">Ch#7</a></li>
+             <li><a class="dropdown-item" href="https://drive.google.com/file/d/1RFfVCDe1bWQfAQciBYa9D1qXj7FYQp6j/view?usp=sharing" target="_self">Ch#8</a></li>
+			 </ul>
+          </div>
+        </div>
+                <div class="col-12 col-md-4 mb-3">
+                <div class="btn-group w-100">
+                   
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually">10.CHEMISTRY</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1cve0sJnH9k02UQdHVFE-y8cIvLh0onfU/view?usp=sharing" target="_self">Ch#1</a></li>
+                     <li><a class="dropdown-item" href="https://drive.google.com/file/d/1jl6oS3AG6Vh_NGbudn_qEdhDaCN3zo1Y/view?usp=sharing" target="_self">Ch#2</a></l>						 <li><a class="dropdown-item" href="https://drive.google.com/file/d/1jl6oS3AG6Vh_NGbudn_qEdhDaCN3zo1Y/view?usp=sharing" target="_self">Ch#2</a></li>
+				  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1jPOMCbNuTGGjOSwujvVHLUsQGQ7BWoh8/view?usp=sharing" target="_self">Ch#3</a></li>
+				   <li><a class="dropdown-item" href="https://drive.google.com/file/d/1TEGm_Ij8t9BAEsR9mSd5m3bgw4jNEX7S/view?usp=sharing" target="_self">Ch#4</a></li>
+				  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1MHr-dhFP_xCEEOMTsFVrJESgqGg16Ij1/view?usp=sharing" target="_self">Ch#6</a></li>
+                    </ul>
+                </div>
+            </div>
+        <div class="col-12 col-md-4 mb-3">
+                <div class="btn-group w-100">
+                  
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually">11.CHEMISTRY</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1dix-UIbH8glRs4yTnBGoN8zN1T3ADD4L/view?usp=sharing" target="_self">Ch#1</a></li>
+                     <li><a class="dropdown-item" href="https://drive.google.com/file/d/1gADpysVsI2kPv5UdlhUIBrqAjvq1SyaQ/view?usp=sharing" target="_self">Ch#2</a></l>						 <li><a class="dropdown-item" href="https://drive.google.com/file/d/1jl6oS3AG6Vh_NGbudn_qEdhDaCN3zo1Y/view?usp=sharing" target="_self">Ch#2</a></li>
+				  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1kU5vAneNdeuaIgHl9h2wFqCGhQjMADxT/view?usp=sharing" target="_self">Ch#3</a></li>
+				   <li><a class="dropdown-item" href="https://drive.google.com/file/d/1DsA7l7ZKuKTTnJL8ztirt3W2STpaSJ4K/view?usp=sharing" target="_self">Ch#4</a></li>
+				  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1Ny3bZcfCEjiuceBj0NQ4TokNtGfwx6qP/view?usp=sharing" target="_self">Ch#5</a></li>
+				  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1vKvoNsZOl7EG6WkmiPi12WKkuuJ1XQrX/view?usp=sharing" target="_self">Ch#6</a></li>
+				   <li><a class="dropdown-item" href="https://drive.google.com/file/d/1VyfNkjJG3fjlQIxwwRwGVKseNxqx3rii/view?usp=sharing" target="_self">Ch#7</a></li>
+				   <li><a class="dropdown-item" href="https://drive.google.com/file/d/1F8EIwymbIIcgD5TA1zDrv7bile4qzvmZ/view?usp=sharing" target="_self">Ch#8</a></li>
+				  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1S8eUeW4Yx42onaZIlDxSLopWtckwRA8z/view?usp=sharing" target="_self">Ch#9</a></li>
+				  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1yf_6USnJJSbrN75IUgz_SP2VXB5qu_tw/view?usp=sharing" target="_self">Ch#11</a></li>
+                    </ul>
+                </div>
+            </div>
+           <div class="col-12 col-md-4 mb-3">
+                <div class="btn-group w-100">
+                   
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually">12.CHEMISTRY</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://drive.google.com/file/d/1n-EFbP9FyY6BJxl28y673hd0qGHCOlqr/view?usp=sharing" target="_self">Ch#1</a></li>
+                     <li><a class="dropdown-item" href="https://drive.google.com/file/d/1IXsiSm0apO09xJtfEe07whaS93zyyCoo/view?usp=sharing" target="_self">Ch#2</a></l>						 <li><a class="dropdown-item" href="https://drive.google.com/file/d/1jl6oS3AG6Vh_NGbudn_qEdhDaCN3zo1Y/view?usp=sharing" target="_self">Ch#2</a></li>
+				  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1i5buTEautdlUvkujcaHaorRU7E6HKSHY/view?usp=sharing" target="_self">Ch#3</a></li>
+				   <li><a class="dropdown-item" href="https://drive.google.com/file/d/1i5buTEautdlUvkujcaHaorRU7E6HKSHY/view?usp=sharing" target="_self">Ch#5</a></li>
+				  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1MHr-dhFP_xCEEOMTsFVrJESgqGg16Ij1/view?usp=sharing" target="_self">Ch#6</a></li>
+				 
+				   <li><a class="dropdown-item" href="https://drive.google.com/file/d/1Ef8oVzA1sf66bxnDOa0y9HmJgE297bX_/view?usp=sharing" target="_self">Ch#7</a></li>
+				   <li><a class="dropdown-item" href="https://drive.google.com/file/d/1Hh1muK74m8c5PA3J1LnR5SYvwGHHzkI6/view?usp=sharing" target="_self">Ch#8</a></li>
+				  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1WgpLUlhBO2WhUlMcRlJtM9bZOSM4bG7F/view?usp=sharing" target="_self">Ch#9</a></li>
+				  
+                    </ul>
+                </div>
+            </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap JS and Popper.js (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
