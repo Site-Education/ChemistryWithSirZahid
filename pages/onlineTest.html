@@ -14,15 +14,93 @@
       
              body {
             font-size: 1rem; /* 1rem is equal to 16px (default) */
-            line-height: 1.5;
+            line-height: 1.4;
 			background: linear-gradient(to top right, #80cbc4, #e1bee7, #80ddea, #d1c4e9);
             text-align: center;
 			 margin: 0;
             padding: 0;
         }
-		.navbar {
-    padding: 1rem; 
-}
+		    nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background-color: #ff0000;
+        }
+
+        /* Navbar Brand */
+        .navbar-brand {
+            font-size: 1.3rem; /* Using rem for font size */
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        /* Navbar Links */
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            margin-left: 2rem; /* Relative spacing between nav items */
+        }
+
+        a {
+            font-size: 1.2rem; /* Using rem for font size */
+            color: #FFFFFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #FFC0CB; /* Change color on hover */
+        }
+
+        /* Navbar Toggler (Mobile View) */
+        .navbar-toggler {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .navbar-toggler span {
+            width: 2rem;
+            height: 0.3rem;
+            background-color: #343a40;
+            margin: 0.4rem 0;
+        }
+
+        /* Mobile View (Screen width less than 768px) */
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                display: flex;
+            }
+
+            ul {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                background-color: #f8f9fa;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+
+            ul.show {
+                display: flex;
+            }
+
+            li {
+                margin-left: 0;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            a {
+                font-size: 1.5rem; /* Adjust font size for mobile */
+            }
+        }
+
 
 
 
@@ -173,36 +251,21 @@
   </head>
 
 <body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         
-                        <a class="nav-link text-white active" aria-current="page" href="../index.html" aria-label="Go to Home Page">HOME</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                    
-                        <a class="nav-link text-white" href="./onlineTest.html" aria-label="Online Test">ONLINE TEST</a>
-                    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                        <a class="nav-link text-white" href="./TEST-PDF.html" aria-label="Download Test PDFs">TEST PDF</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                    
-                        <a class="nav-link text-white" href="./CONTACT.html" aria-label="Contact Us">CONTACT</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                    
-                        <a class="nav-link text-white" href="./ABOUT.html" aria-label="About Us">ABOUT</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-	     <a class="navbar-brand text-white" href="./ChemistryWithMe.html">ChemistryWithMe</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<nav>
+        <a class="navbar-brand" href="./ChemistryWithMe.html">ChemistryWithMe</a>
+        <div class="navbar-toggler" onclick="toggleNavbar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul id="navbarNav">
+            <li><a href="../index.html" aria-label="Go to Home Page">HOME</a></li>
+            <li><a href="./onlineTest.html" aria-label="Online Test">ONLINE TEST</a></li>
+            <li><a href="./TEST-PDF.html" aria-label="Download Test PDFs">TEST PDF</a></li>
+            <li><a href="./CONTACT.html" aria-label="Contact Us">CONTACT</a></li>
+            <li><a href="./ABOUT.html" aria-label="About Us">ABOUT</a></li>
+        </ul>
     </nav>
 
     <div class="container">
@@ -3537,7 +3600,11 @@ correct: "Covalent solid",
           ],
         },
       };
-
+  // Toggle the navigation menu in mobile view
+        function toggleNavbar() {
+            const navbarNav = document.getElementById("navbarNav");
+            navbarNav.classList.toggle("show");
+        }
       function showSubjectSelection() {
         document.getElementById("subject-selection").style.display = "block";
         document.getElementById("chapter-selection").style.display = "none";
