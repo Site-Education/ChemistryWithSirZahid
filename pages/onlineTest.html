@@ -260,63 +260,30 @@
           25 Questions
         </button>
       </div>
-
-      <div id="quiz-container" class="section">
+ <div id="quiz-container" class="section">
         <h2 id="quiz-title"></h2>
-        <h3 id="chapter-title"></h3>
-        <!-- Chapter Title -->
-        <div class="timer">
-          Time Remaining: <span id="timer">300</span> seconds
-        </div>
-        <div class="question-number">
-          Question <span id="current-question-number">1</span> of
-          <span id="total-questions"></span>
-        </div>
+		<h3 id="chapter-title"></h3> 
+        <div class="timer">Time Remaining: <span id="timer">300</span> seconds</div>
+        <div class="question-number">Question <span id="current-question-number">1</span> of <span id="total-questions"></span></div>
         <div class="question" id="question-container"></div>
         <div class="options" id="options-container"></div>
-        <button class="btn" id="explanation-btn" onclick="toggleExplanation()">
-          Show Explanation
-        </button>
-        <div
-          id="detailed-explanation"
-          class="detailed-explanation"
-          style="display: none"
-        ></div>
+        <button class="btn" id="explanation-btn" onclick="toggleExplanation()">Show Explanation</button>
+        <div id="detailed-explanation" class="detailed-explanation" style="display:none;"></div>
 
         <div class="question-navigation">
-          <button
-            class="btn prev-btn"
-            id="prev-btn"
-            onclick="goToPreviousQuestion()"
-            disabled
-          >
-            Previous Question
-          </button>
-          <button
-            class="btn next-btn"
-            id="next-btn"
-            onclick="goToNextQuestion()"
-            disabled
-          >
-            Next Question
-          </button>
+            <button class="btn prev-btn" id="prev-btn" onclick="goToPreviousQuestion()" disabled>Previous Question</button>
+            <button class="btn next-btn" id="next-btn" onclick="goToNextQuestion()" disabled>Next Question</button>
         </div>
 
-        <button class="btn close-btn" onclick="closeQuestion()">
-          Close Question
-        </button>
-        <button class="btn back-btn" onclick="goBackToSubject()">
-          Back to Subject
-        </button>
-      </div>
-
-      <div id="score-container" class="section">
-        <h2>Your Score: <span id="score"></span></h2>
-        <button class="btn back-btn" onclick="goBackToSubject()">
-          Back to Select a Subject
-        </button>
-      </div>
+        <button class="btn close-btn" onclick="closeQuestion()">Close Question</button>
+        <button class="btn back-btn" onclick="goBackToSubject()">Back to Subject</button>
     </div>
+
+    <div id="score-container" class="section">
+        <h2>Your Score: <span id="score"></span></h2>
+        <button class="btn back-btn" onclick="goBackToSubject()">Back to Select a Subject</button>
+    </div>
+</div>
     <script>
       let currentSubject = null;
       let currentChapter = 0;
